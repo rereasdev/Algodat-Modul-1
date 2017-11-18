@@ -6,9 +6,7 @@ public class Gaji extends Pegawai {
         if(nama.matches("[a-zA-Z]*")){
             if(jabatan.matches("[a-zA-Z]*")){
                 switch (jabatan) {
-                    case "Karyawan":
                     case "karyawan":
-                    case "KARYAWAN":
                         if(lama < 2){
                             gaji = "Rp. 3.000.000";
                         }
@@ -19,9 +17,7 @@ public class Gaji extends Pegawai {
                             gaji = "Rp. 12.000.000";
                         }       
                         break;
-                    case "Supervisor":
                     case "supervisor":
-                    case "SUPERVISOR":
                         if(lama < 2){
                             gaji = "Rp. 4.000.000";
                         }
@@ -32,9 +28,7 @@ public class Gaji extends Pegawai {
                             gaji = "Rp. 16.000.000";
                         }       
                         break;
-                    case "Manajer":
-                    case "manajer":
-                    case "MANAJER":
+                    case "manager":
                         if(lama < 2){
                             gaji = "Rp. 5.000.000";
                         }
